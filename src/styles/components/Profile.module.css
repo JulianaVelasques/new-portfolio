@@ -1,0 +1,11 @@
+.container {
+  background-color: red;
+  padding: 2rem;
+  width: 30rem;
+  margin: 0 auto;
+}
+
+.content {
+  background-color: blue;
+  margin-top: 5rem;
+}

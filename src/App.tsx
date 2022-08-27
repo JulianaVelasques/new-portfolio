@@ -1,7 +1,7 @@
-import { Button } from './components/Button';
+import { Profile } from './components/Profile';
 
 function App() {
-  return <Button color="green">Botão 1</Button>;
+  return <Profile />;
 }
 
 export default App;
