@@ -1,21 +1,17 @@
-import { useState } from 'react';
+import Styles from '../styles/components/Button.module.css';
 
 interface ButtonProps {
   color: string;
-  //prop invisível para renderizar onde estou usando esse botão
   children: string;
+  icon?: any;
+  hasIcon?: Boolean;
 }
 
 export function Button(props: ButtonProps) {
-  const [counter, setCounter] = useState(1);
-
-  function increment() {
-    setCounter(counter + 1);
-  }
-
   return (
-    <button style={{ backgroundColor: props.color }} onClick={increment}>
-      {props.children} <strong>{counter}</strong>
+    <button style={{ backgroundColor: props.color }} className={Styles.container}>
+      {props.children}
+      {props.hasIcon ? <img src={props.icon} className={Styles.img} /> : ''}
     </button>
   );
 }
